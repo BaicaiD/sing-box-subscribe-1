@@ -268,19 +268,6 @@
       ]
     },
     {
-      "tag":"Games",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
       "tag":"Streaming",
       "type":"selector",
       "outbounds":[
@@ -498,10 +485,6 @@
         "outbound": "Microsoft"
       },
       {
-        "rule_set": "geosite-category-games",
-        "outbound": "Games"
-      },
-      {
         "rule_set": ["geosite-hbo", "geosite-primevideo"],
         "outbound": "Streaming"
       },
@@ -696,13 +679,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-category-games",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games.srs",
         "download_detour": "direct"
       },
       {
